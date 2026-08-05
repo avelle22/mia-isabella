@@ -195,6 +195,7 @@ img {
 ========================= */
 .seccion-lugar{
     position: relative;
+    padding-bottom: 50px;
 }
 
 .personaje-piscina{

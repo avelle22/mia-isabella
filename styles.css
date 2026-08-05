@@ -197,6 +197,11 @@ img {
 .seccion-lugar {
   min-height: 380px;
   margin-bottom: 30px;
+  background: rgba(255, 0, 0, .2);
+}
+
+.seccion-articulos {
+  background: rgba(0, 255, 0, .2);
 }
 
 .personaje-piscina {

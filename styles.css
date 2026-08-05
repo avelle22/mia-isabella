@@ -348,8 +348,8 @@ img {
   justify-content: space-between;
 
   min-height: 200px;
-  padding-top: 5px;
-  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 .mensaje-final {

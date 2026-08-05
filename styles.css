@@ -409,13 +409,13 @@ img {
 @media (max-width: 390px) {
 
   .personaje-piscina {
-    width: 2000px; /* ajusta el tamaño que quieras */
-    left: -70px;
+    width: 1000px; /* ajusta el tamaño que quieras */
+    left: -20px;
   }
 
   .personaje-corazon {
-    width: 180px; /* ajusta el tamaño */
-    right: -30px;
+    width: 300px; /* ajusta el tamaño */
+    right: -90px;
   }
 
 }

@@ -404,3 +404,18 @@ img {
 .portada {
   background-size: 100% 100%;
 }
+
+/* iPhone 11 al 15 */
+@media (max-width: 390px) {
+
+  .personaje-piscina {
+    width: 2000px; /* ajusta el tamaño que quieras */
+    left: -70px;
+  }
+
+  .personaje-corazon {
+    width: 180px; /* ajusta el tamaño */
+    right: -30px;
+  }
+
+}

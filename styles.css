@@ -403,16 +403,6 @@ img {
 /* iPhone 11 al 15 */
 @media (max-width: 390px) {
 
-.seccion-lugar{
-    position: relative;
-    padding-bottom: 70px;
-}
-   
-.personaje-piscina{
-    left: -70px;
-    padding-bottom: 60px;
-    width: 300px;
-}
 
   .personaje-corazon {
     width: 280px; /* ajusta el tamaño */

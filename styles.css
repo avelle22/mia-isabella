@@ -402,10 +402,7 @@ img {
 /* iPhone 11 al 15 */
 @media (max-width: 390px) {
 
-  .personaje-piscina {
-    width: 350px; /* ajusta el tamaño que quieras */
-    left: -120px;
-  }
+
 
   .personaje-corazon {
     width: 280px; /* ajusta el tamaño */

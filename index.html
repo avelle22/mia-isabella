@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Cumpleaños Mía Isabella</title>
+
+  <!-- BOOTSTRAP -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+  >
+
+  <!-- FANCYAPPS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+  >
+
+  <!-- AOS ANIMATE -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/aos@next/dist/aos.css"
+  >
+
+  <!-- ESTILOS LOCALES -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+ 
+    <section class="portada">
+
+  <div class="portada-contenido">
+
+    <p class="mensaje-portada">
+      ¡Acompáñame a celebrar en un<br>
+      día lleno de sonrisas, juegos y<br>
+      mucha diversión!
+    </p>
+
+    <img
+      src="images/nombre-mia.png"
+      alt="Mía Isabella cumple 9 años"
+      class="nombre-mia"
+    >
+
+  </div>
+
+</section>
+
+<main class="invitacion">
+
+  <section class="seccion-fecha">
+
+    <h2 class="titulo-rosa">Aparta la fecha</h2>
+
+    <p class="fecha-evento">
+      23 de agosto
+    </p>
+
+    <div class="contador">
+
+      <div class="contador-item">
+        <span id="dias">00</span>
+        <small>Días</small>
+      </div>
+
+      <div class="contador-item">
+        <span id="horas">00</span>
+        <small>Horas</small>
+      </div>
+
+      <div class="contador-item">
+        <span id="minutos">00</span>
+        <small>Minutos</small>
+      </div>
+
+      <div class="contador-item">
+        <span id="segundos">00</span>
+        <small>Segundos</small>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="seccion-lugar">
+
+    <img
+      src="images/personaje-piscina.png"
+      alt=""
+      class="personaje-piscina"
+    >
+
+    <div class="informacion-lugar">
+
+      <p class="mensaje-lugar">
+        ¡Prepara tu traje de baño y<br>
+        flotadores! Nos vemos en el
+      </p>
+
+      <h2 class="nombre-lugar">
+        Jardín Los Pinos
+      </h2>
+
+      <a
+        href="https://www.google.com/maps/place/Jardín+los+pinos/@32.6460338,-115.4876744,17z/data=!3m1!4b1!4m6!3m5!1s0x80d77b20faee787f:0xe906a42615d0ecd1!8m2!3d32.6460338!4d-115.4876744!16s%2Fg%2F11tgd61t0v?entry=ttu&g_ep=EgoyMDI2MDgwMi4wIKXMDSoASAFQAw%3D%3D"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="boton-mapa"
+      >
+        Google Maps
+      </a>
+
+    </div>
+
+  </section>
+
+
+<section class="seccion-articulos">
+
+    <div class="caja-articulos">
+
+        <h2 class="titulo-caja">
+            No olvides traer:
+        </h2>
+
+        <div class="lista-articulos">
+
+            <div class="articulo">
+                <img src="images/traje-bano.png" alt="">
+                <p>Traje de baño</p>
+            </div>
+
+            <div class="articulo">
+                <img src="images/bloqueador.png" alt="">
+                <p>Bloqueador solar</p>
+            </div>
+
+            <div class="articulo">
+                <img src="images/toalla.png" alt="">
+                <p>Toalla</p>
+            </div>
+
+            <div class="articulo">
+                <img src="images/flotador.png" alt="">
+                <p>Flotador</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+  <section class="seccion-final">
+
+    <div class="mensaje-final">
+
+      <h2>¡Te esperamos!</h2>
+
+      <p>
+        Para celebrar a Mía<br>
+        un año más
+      </p>
+
+      <span class="talla">
+        Talla 12
+      </span>
+
+    </div>
+
+    <img
+      src="images/personaje-corazon.png"
+      alt=""
+      class="personaje-corazon"
+    >
+
+  </section>
+
+</main>
+
+<script>
+  const cuentaAtras = () => {
+    const fechaEvento = new Date("2026-08-23T18:00:00").getTime();
+    const ahora = new Date().getTime();
+    const diferencia = fechaEvento - ahora;
+
+    const diasElemento = document.getElementById("dias");
+    const horasElemento = document.getElementById("horas");
+    const minutosElemento = document.getElementById("minutos");
+    const segundosElemento = document.getElementById("segundos");
+
+    if (diferencia <= 0) {
+      diasElemento.textContent = "00";
+      horasElemento.textContent = "00";
+      minutosElemento.textContent = "00";
+      segundosElemento.textContent = "00";
+      return;
+    }
+
+    const dias = Math.floor(
+      diferencia / (1000 * 60 * 60 * 24)
+    );
+
+    const horas = Math.floor(
+      (diferencia % (1000 * 60 * 60 * 24)) /
+      (1000 * 60 * 60)
+    );
+
+    const minutos = Math.floor(
+      (diferencia % (1000 * 60 * 60)) /
+      (1000 * 60)
+    );
+
+    const segundos = Math.floor(
+      (diferencia % (1000 * 60)) / 1000
+    );
+
+    diasElemento.textContent = String(dias).padStart(2, "0");
+    horasElemento.textContent = String(horas).padStart(2, "0");
+    minutosElemento.textContent = String(minutos).padStart(2, "0");
+    segundosElemento.textContent = String(segundos).padStart(2, "0");
+  };
+
+  cuentaAtras();
+  setInterval(cuentaAtras, 1000);
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 900,
+    once: true
+  });
+</script>
+
+</body>
+</html>

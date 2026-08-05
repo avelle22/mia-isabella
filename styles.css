@@ -1,0 +1,452 @@
+/* =========================
+   TIPOGRAFÍAS
+========================= */
+
+@font-face {
+  font-family: "FuenteTitulo";
+  src: url("fonts/titulo.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FuenteCuerpo";
+  src: url("fonts/cuerpo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #315e91;
+  font-family: "FuenteCuerpo", sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* =========================
+   PORTADA
+========================= */
+
+.portada {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+
+  background-image: url("images/portada-mia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  overflow: hidden;
+}
+
+.portada::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.15),
+    transparent 25%,
+    transparent 75%,
+    rgba(255, 255, 255, 0.08)
+  );
+  pointer-events: none;
+}
+
+.portada-contenido {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 500px);
+  min-height: 100svh;
+  margin: 0 auto;
+}
+
+.mensaje-portada {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 90%;
+  margin: 0;
+
+  color: #315e91;
+  font-family: "FuenteCuerpo", sans-serif;
+  font-size: clamp(1.1rem, 4.5vw, 1.65rem);
+  line-height: 1.28;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nombre-mia {
+  position: absolute;
+  left: 50%;
+  bottom: -5%;
+  transform: translateX(-50%);
+
+  width: min(70%, 430px);
+  height: auto;
+}
+
+
+/* =========================
+   FONDO DE LA INVITACIÓN
+========================= */
+
+.invitacion {
+  position: relative;
+  width: 100%;
+
+  background-image: url("images/textura-fondo.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: repeat-y;
+
+  overflow: hidden;
+}
+
+.invitacion section {
+  position: relative;
+  width: min(100%, 600px);
+  margin: 0 auto;
+  padding-inline: 24px;
+}
+
+
+/* =========================
+   FECHA
+========================= */
+
+.seccion-fecha {
+  padding-top: 90px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.titulo-rosa {
+  margin: 0 0 20px;
+
+  color: #f59bc5;
+  font-family: "FuenteTitulo", cursive;
+  font-size: clamp(2rem, 9vw, 3.8rem);
+  line-height: 1;
+}
+
+.fecha-evento {
+  margin: 0 0 20px;
+
+  color: #315e91;
+  font-size: clamp(1.2rem, 5vw, 1.8rem);
+  text-transform: uppercase;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  gap: clamp(8px, 3vw, 20px);
+}
+
+.contador-item {
+  min-width: 55px;
+  text-align: center;
+}
+
+.contador-item span {
+  display: block;
+
+  color: #315e91;
+  font-size: clamp(1.8rem, 8vw, 3.5rem);
+  line-height: 1;
+}
+
+.contador-item small {
+  display: block;
+  margin-top: 8px;
+
+  color: #315e91;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+
+/* =========================
+   LUGAR
+========================= */
+
+.seccion-lugar {
+  min-height: 380px;
+  padding-top: 50px;
+}
+
+.personaje-piscina {
+  position: absolute;
+  left: -90px;
+  bottom: 90px;
+
+  width: clamp(230px, 120vw, 310px);
+  z-index: 1;
+}
+
+.informacion-lugar {
+  position: relative;
+  z-index: 2;
+
+  width: 65%;
+  margin-left: auto;
+  text-align: center;
+}
+
+.mensaje-lugar {
+  margin: 0 0 10px;
+
+  color: #315e91;
+  font-size: clamp(1rem, 4vw, 1.35rem);
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.nombre-lugar {
+  margin: 5px 0 22px;
+  
+  padding-top: 20px;
+  color: #f59bc5;
+  font-family: "FuenteTitulo", cursive;
+  font-size: clamp(2rem, 8vw, 3.4rem);
+  line-height: 1;
+}
+
+.boton-mapa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 145px;
+  min-height: 20px;
+  padding: 5px 10px;
+
+  border: 2px solid #315e91;
+  border-radius: 999px;
+
+  background-color: #c9e6f8;
+  color: #315e91;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition: all .25s ease;
+}
+
+.boton-mapa:hover{
+    background:#b5dbf6;
+    transform:translateY(-2px);
+}
+
+.boton-mapa:active{
+    background:#4f87c6;
+    color:#fff;
+    border-color:#4f87c6;
+    transform:scale(.95);
+}
+
+
+/*=========================
+    NO OLVIDES TRAER
+==========================*/
+
+.seccion-articulos{
+    width:min(90%,400px);
+    margin:auto;
+    padding-bottom: 70px;
+}
+
+.caja-articulos{
+    position:relative;
+    padding:30px 10px 20px;
+    border:3px solid #315e91;
+    border-radius:45px;
+    background:rgba(255,255,255,.45);
+
+}
+
+.titulo-caja{
+    position:absolute;
+    left:50%;
+    top:0;
+    transform:translate(-50%,-50%);
+    padding: 5px 20px;
+    background-color: #c9e6f8;
+    color: #315e91;
+    border: 2px solid #315e91;
+    border-radius: 999px;
+    font-family:"FuenteCuerpo";
+    font-size:clamp(1rem,4vw,2rem);
+    text-transform:uppercase;
+    white-space:nowrap;
+
+}
+
+/* GRID */
+
+.lista-articulos{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:3px 5px;
+}
+
+/* CADA ARTÍCULO */
+
+.articulo{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+}
+
+.articulo img{
+    width:170px;
+    height:170px;
+    object-fit:contain;
+}
+
+.articulo p{
+    margin-top:1px;
+    color:#35689f;
+    font-family:"FuenteCuerpo";
+    font-size:1.2rem;
+    text-transform:uppercase;
+}
+
+/* =========================
+   SECCIÓN FINAL
+========================= */
+
+.seccion-final {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  min-height: 200px;
+  padding-top: 5px;
+  padding-bottom: 50px;
+}
+
+.mensaje-final {
+  position: relative;
+  z-index: 2;
+
+  width: 58%;
+  text-align: center;
+}
+
+.mensaje-final h2 {
+  margin: 0 0 15px;
+
+  color: #f59bc5;
+  font-family: "FuenteTitulo", cursive;
+  font-size: clamp(2.1rem, 8vw, 3.5rem);
+  line-height: 1;
+}
+
+.mensaje-final p {
+  margin: 0 0 18px;
+
+  color: #315e91;
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.talla {
+  display: inline-block;
+  padding: 6px 16px;
+
+  border: 2px solid #f59bc5;
+  border-radius: 8px;
+
+  background-color: #ffd8e9;
+  color: #f17bab;
+
+  text-transform: uppercase;
+}
+
+.personaje-corazon {
+  position: absolute;
+  right: -40px;
+  bottom: 0;
+
+  width: clamp(170px, 80vw, 260px);
+}
+
+.portada {
+  background-size: 100% 100%;
+}
+
+/* =========================
+   TELÉFONOS PEQUEÑOS
+========================= */
+
+@media (max-width: 420px) {
+  .portada {
+    background-position: center center;
+  }
+
+  .mensaje-portada {
+    top: 4%;
+    width: 92%;
+  }
+
+  .nombre-mia {
+    bottom: 3%;
+    width: 92%;
+  }
+
+  .seccion-lugar {
+    min-height: 360px;
+    padding-inline: 16px;
+  }
+
+  .personaje-piscina {
+    left: -45px;
+    width: 190px;
+  }
+
+  .informacion-lugar {
+    width: 67%;
+  }
+
+  .lista-articulos {
+    gap: 5px;
+  }
+
+  .articulo img {
+    height: 75px;
+  }
+
+  .caja-articulos {
+    padding-inline: 10px;
+  }
+}

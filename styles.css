@@ -201,7 +201,7 @@ img {
 .personaje-piscina{
     position: absolute;
     left: -70px;
-    padding-top: 60px;
+    padding-bottom: 60px;
     width: 300px;
 }
 

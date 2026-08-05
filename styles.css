@@ -193,34 +193,22 @@ img {
 /* =========================
    LUGAR
 ========================= */
-
-.seccion-lugar {
-  min-height: 380px;
-  margin-bottom: 30px;
-  background: rgba(255, 0, 0, .2);
+.seccion-lugar{
+    min-height: 380px;
+    margin-bottom: 30px;
+    display: flex;
+    outline: 3px solid red;
 }
 
-.seccion-articulos {
-  background: rgba(0, 255, 0, .2);
+.informacion-lugar{
+    outline: 3px solid blue;
 }
 
-.personaje-piscina {
-  position: absolute;
-  left: -90px;
-  bottom: 90px;
-
-  width: clamp(230px, 120vw, 310px);
-  z-index: 1;
+.personaje-piscina{
+    outline: 3px solid green;
 }
 
-.informacion-lugar {
-  position: relative;
-  z-index: 2;
 
-  width: 65%;
-  margin-left: auto;
-  text-align: center;
-}
 
 .mensaje-lugar {
   margin: 0 0 10px;

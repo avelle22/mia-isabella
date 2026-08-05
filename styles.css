@@ -194,20 +194,14 @@ img {
    LUGAR
 ========================= */
 .seccion-lugar { 
-   min-height: 380px; 
-   margin-bottom: 30px; 
-} 
+    position: relative;
+    padding-bottom: 70px;
+}
+
 .personaje-piscina { 
    position: absolute; 
    left: -90px; 
    bottom: 90px; 
-   width: clamp(230px, 120vw, 310px); z-index: 1; }
-
-.personaje-piscina{
-    left: -70px;
-    padding-bottom: 60px;
-    width: 300px;
-}
 
 .informacion-lugar { 
    position: relative; 
@@ -410,6 +404,12 @@ img {
 .seccion-lugar{
     position: relative;
     padding-bottom: 70px;
+}
+   
+.personaje-piscina{
+    left: -70px;
+    padding-bottom: 60px;
+    width: 300px;
 }
 
   .personaje-corazon {

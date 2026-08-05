@@ -194,21 +194,24 @@ img {
    LUGAR
 ========================= */
 .seccion-lugar{
-    min-height: 380px;
-    margin-bottom: 30px;
-    display: flex;
-    outline: 3px solid red;
-}
-
-.informacion-lugar{
-    outline: 3px solid blue;
+    position: relative;
 }
 
 .personaje-piscina{
-    outline: 3px solid green;
+    position: absolute;
+    left: -90px;
+    bottom: 90px;
+    width: 250px;
+    display: block;
 }
 
-
+.informacion-lugar { 
+   position: relative; 
+   z-index: 2; 
+   width: 65%; 
+   margin-left: auto; 
+   text-align: center; 
+}
 
 .mensaje-lugar {
   margin: 0 0 10px;

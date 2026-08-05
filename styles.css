@@ -194,22 +194,24 @@ img {
    LUGAR
 ========================= */
 .seccion-lugar { 
-    position: relative;
-    padding-bottom: 70px;
-}
+   min-height: 380px; 
+   margin-bottom: 30px; 
+} 
 
 .personaje-piscina { 
    position: absolute; 
    left: -90px; 
    bottom: 90px; 
+   width: clamp(230px, 120vw, 310px); 
+   z-index: 1; 
+} 
 
 .informacion-lugar { 
    position: relative; 
    z-index: 2; 
    width: 65%; 
    margin-left: auto; 
-   text-align: center; 
-}
+   text-align: center; }
 
 .mensaje-lugar {
   margin: 0 0 10px;

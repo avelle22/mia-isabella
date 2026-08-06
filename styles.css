@@ -461,7 +461,7 @@ img {
     .personaje-piscina{
         width:290px;
         left:-75px;
-        bottom:75px;
+        bottom:150px;
     }
 
 
@@ -485,7 +485,7 @@ img {
     }
 
     .lista-articulos{
-    display:grid;
+
     grid-template-columns:repeat(4,max-content);
     justify-content:center;
     column-gap:1px;

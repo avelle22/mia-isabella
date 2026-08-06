@@ -488,7 +488,7 @@ img {
     display:grid;
     grid-template-columns:repeat(4,max-content);
     justify-content:center;
-    column-gap:4px;
+    column-gap:1px;
 }
 
     .articulo img{

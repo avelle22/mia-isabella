@@ -417,3 +417,96 @@ img {
 .portada {
   background-size: 100% 100%;
 }
+
+/* =========================
+   AJUSTES PARA TELÉFONOS CHICOS
+   390px o menos
+========================= */
+
+@media (max-width: 390px) {
+
+  /* NOMBRE MÍA EN PORTADA */
+  .nombre-mia {
+    width: 82%;
+    bottom: 1%;
+  }
+
+
+  /* SECCIÓN LUGAR */
+  .seccion-lugar {
+    min-height: 340px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+  }
+
+  .informacion-lugar {
+    width: 72%;
+    margin-left: auto;
+  }
+
+  /* PERSONAJE DE PISCINA MÁS GRANDE
+     Y DENTRO DE LA SECCIÓN */
+  .personaje-piscina {
+    left: -55px;
+    bottom: 0;
+
+    width: 255px;
+    max-width: none;
+  }
+
+
+  /* CONTENEDOR DE ARTÍCULOS */
+  .seccion-articulos {
+    width: 100%;
+    padding-inline: 18px;
+    padding-bottom: 55px;
+  }
+
+  .caja-articulos {
+    padding: 20px 8px 12px;
+    border-radius: 30px;
+  }
+
+  .titulo-caja {
+    width: 72%;
+    padding: 6px 10px;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .lista-articulos {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2px;
+  }
+
+  .articulo {
+    min-width: 0;
+  }
+
+  .articulo img {
+    width: 85px;
+    max-width: 85px;
+    height: 95px;
+  }
+
+  .articulo p {
+    margin: -18px 0 0;
+    font-size: 0.66rem;
+    line-height: 1;
+    white-space: normal;
+    text-align: center;
+  }
+
+
+  /* PERSONAJE FINAL MÁS PEQUEÑO */
+  .personaje-corazon {
+    right: -30px;
+    bottom: 5px;
+
+    width: 190px;
+  }
+
+  .mensaje-final {
+    width: 55%;
+  }
+}

@@ -52,7 +52,7 @@ img {
   width: 100%;
   min-height: 100svh;
 
-  background-image: url("images/portada-mia.jpg");
+  background-image: url("images/portada-mia.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -118,7 +118,7 @@ img {
   position: relative;
   width: 100%;
 
-  background-image: url("images/textura-fondo.jpg");
+  background-image: url("images/textura-fondo.svg");
   background-size: cover;
   background-position: top center;
   background-repeat: repeat-y;

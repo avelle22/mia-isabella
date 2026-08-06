@@ -470,14 +470,23 @@ img {
     =========================*/
 
     .seccion-articulos{
-        width:95%;
+        width:90%;
         padding-bottom:55px;
     }
 
     .caja-articulos{
         padding:10px 15px 18px;
         border-radius:30px;
+       padding-inline:5px;
     }
+   
+   .articulo:not(:last-child){
+    margin-right:-8px;
+   }
+
+   .articulo{
+    margin-right: -6px;
+}
 
     .titulo-caja{
         font-size:1.2rem;
@@ -487,8 +496,8 @@ img {
     .lista-articulos{
     grid-template-columns:repeat(4,max-content);
     justify-content:center;
-    column-gap:1px;
-}
+    column-gap:0px;
+   }
 
     .articulo img{
         width:120px;

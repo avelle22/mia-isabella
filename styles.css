@@ -193,25 +193,29 @@ img {
 /* =========================
    LUGAR
 ========================= */
-.seccion-lugar { 
-   min-height: 380px; 
-   margin-bottom: 30px; 
-} 
 
-.personaje-piscina { 
-   position: absolute; 
-   left: -90px; 
-   bottom: 90px; 
-   width: clamp(230px, 120vw, 310px); 
-   z-index: 1; 
-} 
+.seccion-lugar {
+  padding-top: 10px;
+  padding-bottom: 80px;
+}
 
-.informacion-lugar { 
-   position: relative; 
-   z-index: 2; 
-   width: 65%; 
-   margin-left: auto; 
-   text-align: center; }
+.personaje-piscina {
+  position: absolute;
+  left: -70px;
+  bottom: 20px;
+
+  width: clamp(200px, 90vw, 280px);
+  z-index: 1;
+}
+
+.informacion-lugar {
+  position: relative;
+  z-index: 2;
+
+  width: 65%;
+  margin-left: auto;
+  text-align: center;
+}
 
 .mensaje-lugar {
   margin: 0 0 10px;
@@ -270,69 +274,83 @@ img {
     NO OLVIDES TRAER
 ==========================*/
 
-.seccion-articulos{
-    width:min(90%,400px);
-    margin:auto;
+.seccion-articulos {
+    width: min(90%, 720px);
+    margin: 0 auto;
+    padding: 1px 0 70px;
 }
 
-.caja-articulos{
-    position:relative;
-    padding:30px 10px 20px;
-    border:3px solid #315e91;
-    border-radius:45px;
-    background:rgba(255,255,255,.45);
+.caja-articulos {
+    position: relative;
+    padding: 1px 25px 18px;
 
+    border: 2px solid #315e91;
+    border-radius: 35px;
+
+    background: rgba(255, 255, 255, 0.45);
 }
 
-.titulo-caja{
-    position:absolute;
-    left:50%;
-    top:0;
-    transform:translate(-50%,-50%);
-    padding: 5px 20px;
+/* TÍTULO SUPERIOR */
+
+.titulo-caja {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    margin: 0;
+    padding: 5px 28px;
+
     background-color: #c9e6f8;
     color: #315e91;
+
     border: 2px solid #315e91;
     border-radius: 999px;
-    font-family:"FuenteCuerpo";
-    font-size:clamp(1rem,4vw,2rem);
-    text-transform:uppercase;
-    white-space:nowrap;
 
+    font-family: "FuenteCuerpo";
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-weight: normal;
+    line-height: 1;
+
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
-/* GRID */
+/* CUATRO ARTÍCULOS EN UNA SOLA FILA */
 
-.lista-articulos{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:3px 5px;
+.lista-articulos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: end;
+    gap: 15px;
 }
 
 /* CADA ARTÍCULO */
 
-.articulo{
-    position:relative;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-
+.articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.articulo img{
-    width:170px;
-    height:170px;
-    object-fit:contain;
+.articulo img {
+    width: 10000%;
+    max-width: 150px;
+    height: 200px;
+    object-fit: contain;
 }
 
-.articulo p{
-    margin-top:1px;
-    color:#35689f;
-    font-family:"FuenteCuerpo";
-    font-size:1.2rem;
-    text-transform:uppercase;
+.articulo p {
+    color: #35689f;
+    margin-top: -50px;
+
+    font-family: "FuenteCuerpo";
+    font-size: 14px;
+
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
 /* =========================
@@ -345,8 +363,8 @@ img {
   justify-content: space-between;
 
   min-height: 200px;
-  padding-top: 70px;
-  padding-bottom: 30px;
+  padding-top: 5px;
+  padding-bottom: 50px;
 }
 
 .mensaje-final {
@@ -400,13 +418,48 @@ img {
   background-size: 100% 100%;
 }
 
-/* iPhone 11 al 15 */
-@media (max-width: 390px) {
+/* =========================
+   TELÉFONOS PEQUEÑOS
+========================= */
 
-
-  .personaje-corazon {
-    width: 280px; /* ajusta el tamaño */
-    right: -90px;
+@media (max-width: 420px) {
+  .portada {
+    background-position: center center;
   }
 
+  .mensaje-portada {
+    top: 4%;
+    width: 92%;
+  }
+
+  .nombre-mia {
+    bottom: 3%;
+    width: 92%;
+  }
+
+  .seccion-lugar {
+    min-height: 360px;
+    padding-inline: 16px;
+  }
+
+  .personaje-piscina {
+    left: -45px;
+    width: 190px;
+  }
+
+  .informacion-lugar {
+    width: 67%;
+  }
+
+  .lista-articulos {
+    gap: 5px;
+  }
+
+  .articulo img {
+    height: 75px;
+  }
+
+  .caja-articulos {
+    padding-inline: 10px;
+  }
 }

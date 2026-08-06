@@ -437,7 +437,7 @@ img {
     .seccion-lugar{
         min-height:130px;
         padding-top:15px;
-        padding-bottom:1px;
+        padding-bottom:50px;
     }
 
     .informacion-lugar{
@@ -461,7 +461,7 @@ img {
     .personaje-piscina{
         width:290px;
         left:-75px;
-        bottom:150px;
+        bottom:10px;
     }
 
 

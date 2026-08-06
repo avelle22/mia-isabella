@@ -435,7 +435,7 @@ img {
     /* ---------- LUGAR ---------- */
 
     .seccion-lugar{
-        min-height:330px;
+        min-height:130px;
         padding-top:15px;
         padding-bottom:1px;
     }
@@ -485,7 +485,7 @@ img {
     }
 
     .lista-articulos{
-        gap:8px;
+        gap:3px;
     }
 
     .articulo img{

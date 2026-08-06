@@ -487,11 +487,10 @@ img {
         gap:5px;
     }
 
-    .articulo img{
-    width:100%;
-    max-width:160px;
-    height:140px;
-    object-fit:contain;
+.articulo img{
+    width: 125px;
+    height: auto;
+    object-fit: contain;
 }
 
     .articulo p{

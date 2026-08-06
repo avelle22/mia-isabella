@@ -432,40 +432,37 @@ img {
         bottom:2%;
     }
 
-
-/*=========================
-        LUGAR
-    =========================*/
+    /* ---------- LUGAR ---------- */
 
     .seccion-lugar{
-        padding-top:10px;
-        padding-bottom:40px;
-    }
-
-    .personaje-piscina{
-        left:-70px;
-        bottom:70px;
-        width:290px;
+        min-height:330px;
+        padding-top:15px;
+        padding-bottom:1px;
     }
 
     .informacion-lugar{
-        width:70%;
+        width:72%;
     }
 
     .mensaje-lugar{
-        font-size:1.15rem;
+        font-size:1.05rem;
     }
 
     .nombre-lugar{
-        padding-top:15px;
-        font-size:3.2rem;
+        font-size:30px;
     }
 
     .boton-mapa{
-        min-width:180px;
-        padding:8px 18px;
+        min-width:150px;
     }
 
+    /* Personaje piscina */
+
+    .personaje-piscina{
+        width:290px;
+        left:-75px;
+        bottom:75px;
+    }
 
 
     /*=========================

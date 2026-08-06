@@ -432,74 +432,74 @@ img {
         bottom:2%;
     }
 
-    /* ---------- LUGAR ---------- */
+
+/*=========================
+        LUGAR
+    =========================*/
 
     .seccion-lugar{
-        min-height:330px;
-        padding-top:15px;
-        padding-bottom:1px;
+        padding-top:10px;
+        padding-bottom:40px;
+    }
+
+    .personaje-piscina{
+        left:-70px;
+        bottom:70px;
+        width:290px;
     }
 
     .informacion-lugar{
-        width:72%;
+        width:70%;
     }
 
     .mensaje-lugar{
-        font-size:1.05rem;
+        font-size:1.15rem;
     }
 
     .nombre-lugar{
-        font-size:30px;
+        padding-top:15px;
+        font-size:3.2rem;
     }
 
     .boton-mapa{
-        min-width:150px;
+        min-width:180px;
+        padding:8px 18px;
     }
 
-    /* Personaje piscina */
 
-    .personaje-piscina{
-        width:290px;
-        left:-75px;
-        bottom:75px;
-    }
 
-    /* ---------- ARTÍCULOS ---------- */
+    /*=========================
+        NO OLVIDES TRAER
+    =========================*/
 
     .seccion-articulos{
-        width:100%;
-        padding-inline:14px;
+        width:95%;
         padding-bottom:55px;
     }
 
     .caja-articulos{
+        padding:10px 15px 18px;
         border-radius:30px;
-        padding:20px 10px 15px;
     }
 
     .titulo-caja{
-        width:72%;
-        font-size:1rem;
-        text-align:center;
+        font-size:1.2rem;
+        padding:6px 25px;
     }
 
     .lista-articulos{
-        gap:5px;
+        gap:8px;
     }
 
-.articulo img{
-    width: 125px;
-    height: auto;
-    object-fit: contain;
-}
+    .articulo img{
+        width:120px;
+        height:auto;
+    }
 
     .articulo p{
-    margin-top:-18px;
-    font-size:.82rem;
-    line-height:1;
-    white-space:nowrap;
-}
-
+        margin-top:-18px;
+        font-size:15px;
+    }
     /* ---------- SECCIÓN FINAL ---------- */
 
     .mensaje-final{

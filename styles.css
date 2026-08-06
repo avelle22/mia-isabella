@@ -512,12 +512,12 @@ img {
     /* ---------- SECCIÓN FINAL ---------- */
 
     .mensaje-final{
-        width:52%;
+        width:50%;
     }
 
     .personaje-corazon{
-        width:210px;
-        right:-45px;
+        width:250px;
+        right:-50px;
         bottom:0;
     }
 

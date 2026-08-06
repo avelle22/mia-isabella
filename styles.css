@@ -419,94 +419,98 @@ img {
 }
 
 /* =========================
-   AJUSTES PARA TELÉFONOS CHICOS
-   390px o menos
+   TELÉFONOS PEQUEÑOS
+   (390px o menos)
 ========================= */
 
-@media (max-width: 390px) {
+@media (max-width:390px){
 
-  /* NOMBRE MÍA EN PORTADA */
-  .nombre-mia {
-    width: 82%;
-    bottom: 1%;
-  }
+    /* ---------- PORTADA ---------- */
 
+    .nombre-mia{
+        width:82%;
+        bottom:2%;
+    }
 
-  /* SECCIÓN LUGAR */
-  .seccion-lugar {
-    min-height: 340px;
-    padding-top: 10px;
-    padding-bottom: 35px;
-  }
+    /* ---------- LUGAR ---------- */
 
-  .informacion-lugar {
-    width: 72%;
-    margin-left: auto;
-  }
+    .seccion-lugar{
+        min-height:330px;
+        padding-top:15px;
+        padding-bottom:30px;
+    }
 
-  /* PERSONAJE DE PISCINA MÁS GRANDE
-     Y DENTRO DE LA SECCIÓN */
-  .personaje-piscina {
-    left: -55px;
-    bottom: 0;
+    .informacion-lugar{
+        width:72%;
+    }
 
-    width: 255px;
-    max-width: none;
-  }
+    .mensaje-lugar{
+        font-size:1.05rem;
+    }
 
+    .nombre-lugar{
+        font-size:3rem;
+    }
 
-  /* CONTENEDOR DE ARTÍCULOS */
-  .seccion-articulos {
-    width: 100%;
-    padding-inline: 18px;
-    padding-bottom: 55px;
-  }
+    .boton-mapa{
+        min-width:180px;
+    }
 
-  .caja-articulos {
-    padding: 20px 8px 12px;
-    border-radius: 30px;
-  }
+    /* Personaje piscina */
 
-  .titulo-caja {
-    width: 72%;
-    padding: 6px 10px;
-    font-size: 1rem;
-    text-align: center;
-  }
+    .personaje-piscina{
+        width:290px;
+        left:-70px;
+        bottom:75px;
+    }
 
-  .lista-articulos {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 2px;
-  }
+    /* ---------- ARTÍCULOS ---------- */
 
-  .articulo {
-    min-width: 0;
-  }
+    .seccion-articulos{
+        width:100%;
+        padding-inline:14px;
+        padding-bottom:55px;
+    }
 
-  .articulo img {
-    width: 85px;
-    max-width: 85px;
-    height: 95px;
-  }
+    .caja-articulos{
+        border-radius:30px;
+        padding:20px 10px 15px;
+    }
 
-  .articulo p {
-    margin: -18px 0 0;
-    font-size: 0.66rem;
-    line-height: 1;
-    white-space: normal;
-    text-align: center;
-  }
+    .titulo-caja{
+        width:72%;
+        font-size:1rem;
+        text-align:center;
+    }
 
+    .lista-articulos{
+        gap:5px;
+    }
 
-  /* PERSONAJE FINAL MÁS PEQUEÑO */
-  .personaje-corazon {
-    right: -30px;
-    bottom: 5px;
+    .articulo img{
+        width:100%;
+        max-width:105px;
+        height:120px;
+        object-fit:contain;
+    }
 
-    width: 190px;
-  }
+    .articulo p{
+        margin-top:-22px;
+        font-size:.72rem;
+        line-height:1;
+        white-space:nowrap;
+    }
 
-  .mensaje-final {
-    width: 55%;
-  }
+    /* ---------- SECCIÓN FINAL ---------- */
+
+    .mensaje-final{
+        width:52%;
+    }
+
+    .personaje-corazon{
+        width:250px;
+        right:-45px;
+        bottom:0;
+    }
+
 }

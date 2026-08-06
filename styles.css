@@ -437,7 +437,7 @@ img {
     .seccion-lugar{
         min-height:330px;
         padding-top:15px;
-        padding-bottom:30px;
+        padding-bottom:1px;
     }
 
     .informacion-lugar{
@@ -449,7 +449,7 @@ img {
     }
 
     .nombre-lugar{
-        font-size:35px;
+        font-size:30px;
     }
 
     .boton-mapa{
@@ -490,7 +490,7 @@ img {
     .articulo img{
     width:100%;
     max-width:160px;
-    height:auto;
+    height:140px;
     object-fit:contain;
 }
 

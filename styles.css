@@ -449,7 +449,7 @@ img {
     }
 
     .nombre-lugar{
-        font-size:20px;
+        font-size:35px;
     }
 
     .boton-mapa{
@@ -489,8 +489,8 @@ img {
 
     .articulo img{
     width:100%;
-    max-width:120px;
-    height:135px;
+    max-width:160px;
+    height:auto;
     object-fit:contain;
 }
 

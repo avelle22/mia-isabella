@@ -354,6 +354,102 @@ img {
 }
 
 /* =========================
+   CONFIRMACIÓN DE ASISTENCIA
+========================= */
+
+.seccion-confirmacion {
+  padding-top: 40px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.seccion-confirmacion .titulo-rosa {
+  margin-bottom: 30px;
+}
+
+#form-confirmacion {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form-confirmacion label {
+  margin-bottom: 8px;
+
+  color: #315e91;
+  font-family: "FuenteCuerpo", sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+#form-confirmacion input {
+  width: 100%;
+  padding: 12px 18px;
+
+  border: 2px solid #315e91;
+  border-radius: 12px;
+
+  background-color: #c9e6f8;
+  color: #315e91;
+
+  font-family: "FuenteCuerpo", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+
+  outline: none;
+}
+
+#form-confirmacion input::placeholder {
+  color: #315e91;
+  opacity: 0.65;
+}
+
+#form-confirmacion input:focus {
+  border-color: #f59bc5;
+  background-color: #e7f4fc;
+}
+
+#form-confirmacion button {
+  margin-top: 18px;
+  padding: 10px 25px;
+
+  border: 2px solid #315e91;
+  border-radius: 999px;
+
+  background-color: #c9e6f8;
+  color: #315e91;
+
+  font-family: "FuenteCuerpo", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: all .25s ease;
+}
+
+#form-confirmacion button:hover {
+  background-color: #b5dbf6;
+  transform: translateY(-2px);
+}
+
+#form-confirmacion button:active {
+  background-color: #4f87c6;
+  color: #fff;
+  transform: scale(.95);
+}
+
+#mensaje-confirmacion {
+  margin-top: 15px;
+
+  color: #315e91;
+  font-size: .95rem;
+}
+/* =========================
    SECCIÓN FINAL
 ========================= */
 

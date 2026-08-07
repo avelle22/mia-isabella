@@ -245,6 +245,36 @@
     once: true
   });
 </script>
+<script>
+  const formulario = document.getElementById("form-confirmacion");
 
+  formulario.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const mensaje = document.getElementById("mensaje-confirmacion");
+
+    if (!nombre) {
+      mensaje.textContent = "Por favor escribe tu nombre.";
+      return;
+    }
+
+    const datos = new FormData();
+    datos.append("nombre", nombre);
+
+    fetch("https://script.google.com/macros/s/AKfycbwMf-ebbBiULyPa3nuVSs7sYH6u-scFH-GdmNKuCC7IilU_EPOJIq4E_0BGU5K1pxVDjg/exec", {
+      method: "POST",
+      body: datos
+    })
+    .then(() => {
+      mensaje.textContent = "¡Gracias por confirmar! 💗";
+      formulario.reset();
+    })
+    .catch((error) => {
+      console.error(error);
+      mensaje.textContent = "Ocurrió un error. Inténtalo nuevamente.";
+    });
+  });
+</script>
 </body>
 </html>

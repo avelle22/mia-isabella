@@ -433,13 +433,16 @@ img {
 }
 
 #form-confirmacion button:hover {
-  background-color: #b5dbf6;
+  background-color: #f59bc5;
+  color: #fff;
+  border-color: #f59bc5;
   transform: translateY(-2px);
 }
 
 #form-confirmacion button:active {
   background-color: #f59bc5;
   color: #fff;
+  border-color: #fff;
   transform: scale(.95);
 }
 

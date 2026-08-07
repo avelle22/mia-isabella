@@ -417,11 +417,11 @@ img {
   margin-top: 18px;
   padding: 10px 25px;
 
-  border: 2px solid #315e91;
+  border: 2px solid #f59bc5;
   border-radius: 999px;
 
-  background-color: #c9e6f8;
-  color: #315e91;
+  background-color: #ffd8e9;
+  color: #f59bc5;
 
   font-family: "FuenteCuerpo", sans-serif;
   font-size: 1rem;
@@ -438,7 +438,7 @@ img {
 }
 
 #form-confirmacion button:active {
-  background-color: #4f87c6;
+  background-color: #f59bc5;
   color: #fff;
   transform: scale(.95);
 }
